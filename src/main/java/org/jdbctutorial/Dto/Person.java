@@ -5,7 +5,7 @@ public class Person {
     private String firstName;
     private String lastName;
     private String city;
-
+    private String address;
     public int getId() {
         return id;
     }
@@ -46,7 +46,14 @@ public class Person {
         this.address = address;
     }
 
-    private String address;
-
-
+    @Override
+    public String toString() {
+        return "Person{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", city='" + city + '\'' +
+                ", address='" + address + '\'' +
+                '}';
+    }
 }
